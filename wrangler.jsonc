@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "showup-web",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-09-15",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "SHOWUP_KV",
+      "id": "c2baf38658394b518f0102199582a027"
+    }
+  ]
+}
